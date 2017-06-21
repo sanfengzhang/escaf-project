@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="druidStatViewServlet"
+		class="org.springframework.boot.web.servlet.ServletRegistrationBean">
+		<property name="servlet" ref="statViewServlet" />
+		<property name="urlMappings">
+			<set>
+				<value>/druid/*</value>
+			</set>
+		</property>
+		<property name="initParameters">
+			<map>
+				<entry key="allow" value="127.0.0.1" />
+				<entry key="deny" value="127.0.3.1" />
+				<entry key="loginUsername" value="root" />
+				<entry key="loginPassword" value="12345" />
+				<entry key="resetEnable" value="false" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="statViewServlet" class="com.alibaba.druid.support.http.StatViewServlet"></bean>
+
+	<bean id="webStatFilter" class="com.alibaba.druid.support.http.WebStatFilter"></bean>
+
+	<bean id="druidStatFilter"
+		class="org.springframework.boot.web.servlet.FilterRegistrationBean">
+		<property name="filter" ref="webStatFilter" />
+		<property name="urlPatterns">
+			<set>
+				<value>/*</value>
+			</set>
+		</property>
+		<property name="initParameters">
+			<map>
+				<entry key="exclusions" value="*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*" />
+
+			</map>
+		</property>
+	</bean>
+
+</beans>          

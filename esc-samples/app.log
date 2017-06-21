@@ -1,0 +1,84 @@
+2017-06-05 15:53:50.687  INFO 5048 --- [main] com.esctest.Application                  : Starting Application on Johnny with PID 5048 (F:\GitHubRepository\esc-samples\target\classes started by owner in F:\GitHubRepository\esc-samples)
+2017-06-05 15:53:50.693  INFO 5048 --- [main] com.esctest.Application                  : No active profile set, falling back to default profiles: default
+2017-06-05 15:53:50.694  INFO 5048 --- [main] c.e.core.config.ConfigFileService        : the resource type=xml and size=1
+2017-06-05 15:53:50.771  INFO 5048 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from file [F:\GitHubRepository\esc-samples\target\classes\resource\spring\spring_druid_beans.xml]
+2017-06-05 15:53:50.976  INFO 5048 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [com/escframework/support/quartz/quartz-spring.xml]
+2017-06-05 15:53:51.017  INFO 5048 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63021689: startup date [Mon Jun 05 15:53:51 CST 2017]; root of context hierarchy
+2017-06-05 15:53:52.426  INFO 5048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-06-05 15:53:52.449  INFO 5048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-06-05 15:53:54.254  INFO 5048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2017-06-05 15:53:54.274  INFO 5048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-06-05 15:53:54.276  INFO 5048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-06-05 15:53:54.457  INFO 5048 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-05 15:53:54.457  INFO 5048 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3444 ms
+2017-06-05 15:53:54.865  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-06-05 15:53:54.868  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-05 15:53:54.875  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-06-05 15:53:54.876  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-05 15:53:54.876  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-05 15:53:54.876  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-05 15:53:54.876  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-05 15:53:54.876  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-06-05 15:53:54.877  INFO 5048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2017-06-05 15:53:55.411  INFO 5048 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-06-05 15:53:55.741  INFO 5048 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-06-05 15:53:55.771  INFO 5048 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-06-05 15:53:55.895  INFO 5048 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.10.Final}
+2017-06-05 15:53:55.897  INFO 5048 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-06-05 15:53:55.953  INFO 5048 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-06-05 15:53:56.088  INFO 5048 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-06-05 15:53:56.570  INFO 5048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-06-05 15:53:56.607  INFO 5048 --- [main] c.e.support.quartz.TimerTaskHandlerBean  : timerTaskBean execute...
+2017-06-05 15:53:57.201  INFO 5048 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63021689: startup date [Mon Jun 05 15:53:51 CST 2017]; root of context hierarchy
+2017-06-05 15:53:57.335  INFO 5048 --- [main] c.e.core.web.CorsWebMvcConfiguration     : the urlMappings=/*  support cors.
+2017-06-05 15:53:57.388  INFO 5048 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login.action]}" onto public java.lang.String com.esctest.LoginController.login()
+2017-06-05 15:53:57.390  INFO 5048 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ssoToken.action],methods=[POST]}" onto public java.lang.String com.esctest.sso.SsoTokenController.requestToken(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,java.net.URISyntaxException
+2017-06-05 15:53:57.396  INFO 5048 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-05 15:53:57.397  INFO 5048 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-05 15:53:57.474  INFO 5048 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-05 15:53:57.475  INFO 5048 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-05 15:53:57.563  INFO 5048 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-05 15:53:58.292  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/health || /application/health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-06-05 15:53:58.294  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/logfile || /application/logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2017-06-05 15:53:58.295  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/beans || /application/beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.299  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-06-05 15:53:58.299  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v2+json || application/json],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-06-05 15:53:58.300  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/loggers || /application/loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.301  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/dump || /application/dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.302  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/trace || /application/trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.304  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/mappings || /application/mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.307  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-06-05 15:53:58.308  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/env || /application/env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.309  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/heapdump || /application/heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-06-05 15:53:58.310  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/auditevents || /application/auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-06-05 15:53:58.311  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/autoconfig || /application/autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.312  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/info || /application/info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.313  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-06-05 15:53:58.314  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/metrics || /application/metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.315  INFO 5048 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/application/configprops || /application/configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-05 15:53:58.719  INFO 5048 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2017-06-05 15:53:58.743  INFO 5048 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-06-05 15:53:58.745  INFO 5048 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.1 created.
+2017-06-05 15:53:58.746  INFO 5048 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2017-06-05 15:53:58.747  INFO 5048 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-06-05 15:53:58.748  INFO 5048 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2017-06-05 15:53:58.748  INFO 5048 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.1
+2017-06-05 15:53:58.748  INFO 5048 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@747835f5
+2017-06-05 15:53:58.915  INFO 5048 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-05 15:53:58.917  INFO 5048 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-06-05 15:53:58.926  INFO 5048 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-06-05 15:53:58.933  INFO 5048 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-06-05 15:53:59.035  INFO 5048 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-06-05 15:53:59.036  INFO 5048 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2017-06-05 15:53:59.037  INFO 5048 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2017-06-05 15:53:59.145  INFO 5048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http)
+2017-06-05 15:53:59.154  INFO 5048 --- [main] com.esctest.Application                  : Started Application in 8.997 seconds (JVM running for 9.521)
