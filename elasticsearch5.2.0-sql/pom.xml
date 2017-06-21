@@ -6,8 +6,7 @@
 	<version>5.2.0.0</version>
 	<packaging>jar</packaging>
 	<description>Query elasticsearch using SQL</description>
-	<name>elasticsearch-sql</name>
-	<url>https://github.com/NLPchina/elasticsearch-sql/</url>
+	<name>elasticsearch-sql</name>	
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
