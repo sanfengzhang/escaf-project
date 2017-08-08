@@ -1,2 +1,10 @@
 # escaf-project
 一点点痕迹
+
+escaf-framework-core项目包括一个基于SpringBoot的基础框架，SpingBoot将配置文件集中，以前缀的方式区分和加载。在该项目中稍微改造支持按不同分类文件去配置参数。其他的支持一些基础的微服务的框架数据库支持、定时任务注解化。支持将Controller注册到服务、这个注册可以是Doubbo的注册中心也可以是其他的一些服务注册组件。
+escaf-framework-esauth项目是一个简单的访问Elasticsearch的安全认证插件，认证机制包含IP白黑名单的方式、第三方Token认证的机制、和临时token认证的机制
+提供以安全认证的方式访问ES
+elasticsearch5.2.0-sql项目是在开源elasticsearch5.2.0-sql的项目基础上提供一个对结果集进行简单的封装的一个功能支持用户自定义对象返回结果集。提供一些基本的查询API。
+
+
+
