@@ -1,0 +1,46 @@
+SELECT count(*) FROM trans_log  GROUP BY trans_type ORDER BY COUNT(*) DESC limit 10
+上述查询当前字段trans_type不包含空值可以直接这样写,取前10,需要注意这里只是取前10条数据如果结果数据如下：
+270750 33
+471210 32
+476014 31
+180028 31  对当前查询结果取前三，此时180028对应的这条数据不会取出来，也就是在某个临界处存在相同的值时候是不会取到下一条的只按条数来取
+这里可能需要你自己去做相关的处理了。
+
+
+SELECT count(*) FROM trans_log  GROUP BY terms('field'='trans_channel_id','missing'='N/A','size'=6) ORDER BY COUNT(*) DESC
+这种写法统计的是对应的字段存在控制，因为channel_id有空值的存在，size是指定返回的结果条数。
+如果存在相同的值，效果同上一样
+
+
+{
+  "from" : 0,
+  "size" : 0,
+  "_source" : {
+    "includes" : [
+      "COUNT"
+    ],
+    "excludes" : [ ]
+  },
+  "aggregations" : {
+    "terms(field=trans_channel_id,missing=N/A,size=6)" : {
+      "terms" : {
+        "field" : "trans_channel_id",
+        "missing" : "N/A",
+        "size" : 6,
+        "min_doc_count" : 1,
+        "shard_min_doc_count" : 0,
+        "show_term_doc_count_error" : false,
+        "order" : {
+          "_count" : "desc"
+        }
+      },
+      "aggregations" : {
+        "COUNT(*)" : {
+          "value_count" : {
+            "field" : "_index"
+          }
+        }
+      }
+    }
+  }
+}
