@@ -14,6 +14,8 @@ SELECT count(*) FROM trans_log  GROUP BY terms('field'='trans_channel_id','missi
 在做聚合时，尝试用text类型的字段做排序，text是需要分词的，分词的话首先字典很大，其次排序是对字典里的词进行排序而不是text类型的词，所以从es5开始就将text类型的字段的fielddata默认设置为false
 注意对text字段聚合时候需要将fielddata设置为true
 
+text类型的字段是要分词的。 一来词典很大，性能会很差；二来排序结果是词典里的词，而并非整个text的内容。 出于这2点原因，ES5.x以后对于text类型默认禁用了fielddata，防止对text字段一些错误的操作（排序，聚合，script)而给heap造成很大的压力。
+
 
 
 {
